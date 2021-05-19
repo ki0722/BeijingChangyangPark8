@@ -1,0 +1,788 @@
+/************************************/
+/*                BASE              */
+/************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  /*　font-size: 1vw; */
+}
+
+/************************************/
+/*                LAYOUT            */
+/************************************/
+
+#container{
+  width: 96%;
+  max-width: 1280px;
+  min-width: 512px;
+  margin: 0 auto;
+}
+
+/**************** HEADER ***********/
+
+header {
+  position:relative;
+  height: 8rem;
+  background:linear-gradient(to top,#EEC1E9, #B2E2FF);
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+header img {
+  position: absolute;
+  top: 2rem;
+  left: 0rem;
+  width:90px;
+}
+
+header h1 {
+  position: absolute;
+  top: 3rem;
+  left: 6rem;
+  font-size: 3vw;/*所有字体大小 根据画面尺寸 自动变换*/
+  background:-webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FFFFBB;
+}
+
+header h3{
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+  font-size: 1vw;
+  color: #afddfa;
+}
+
+/************** NAVIGATION ***********/
+
+nav {
+  padding: 1rem 3rem ;
+  background:linear-gradient(to top,#D4CFF3,#9ED1CA);
+}
+
+#con{
+  display: flex;
+  flex-direction: row;
+}
+
+#con li{
+  margin-right: 2vw;
+}
+
+#con li:hover{
+  background-color: white;
+}
+
+#con li a {
+  color: white;
+}
+
+#con li a:hover {
+  color: red;
+}
+
+/**************** MAIN ***********/
+
+main {
+  display: flex;
+  flex-wrap：wrap;
+  justify-content:space-between;
+}
+
+
+/*** SECTION ****/
+
+section {
+  flex:3;
+  padding: 3rem;
+  background: #E0ECF8;
+}
+
+/** ARTICLE **/
+
+article {
+  margin-bottom: 2rem;
+  background:#000022;
+}
+
+/* #PHOTO */
+article.PHOTO {
+  padding: 3rem;
+  background: #DDD;
+}
+  article.PHOTO img {
+    width:100%;
+  }
+
+/* #VIDEO */
+article.VIDEO {
+   /* Nothing to do */
+}
+  article.VIDEO video{
+    width: 100%;
+  }
+
+/* #TEXT */
+article.TEXT {
+  padding: 2rem;
+  color: #0B0B3B;
+  font-size: 1.5rem;
+/*background斜め４つ色*/
+background: linear-gradient(to bottom right, #FFF, #FE9A2E 25%, #F89174 15%, #748af8);
+}
+  article.TEXT h1 {
+    background:-webkit-linear-gradient(0deg, #86FDE8,#ACB6E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFFFDD;
+  }
+  article.TEXT p {
+    background:-webkit-linear-gradient(0deg, #86FDE8,#ACB6E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFFFDD;
+  }
+
+/* #IMAGESET */
+article.ImageSet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  article.ImageSet div.BOX {
+    width: 200px;
+    margin-bottom: 1rem;
+    padding: 0.1rem;
+    background: #DDD;
+  }
+  article.ImageSet div.BOX img {
+    width: 100%;
+  }
+  /* #IMAGESET wenzi de bufeng */
+      div{position:relative;}
+
+      h2{font-size:23px;color:white;position:absolute;top:50px;left:30px;}
+
+
+/* XXXXXX for SPRING */
+
+/*
+article.XXXXXX {
+
+}
+*/
+
+/* RIPPLES for SUMMER */
+article.RIPPLES {
+
+}
+  #RIPPLES01 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_01.jpg);
+    background-size:cover;
+  }
+  #RIPPLES02 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_02.jpg);
+    background-size:cover;
+  }
+  #RIPPLES03 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_03.jpg);
+    background-size:cover;
+  }
+  #RIPPLES04 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_04.jpg);
+    background-size:cover;
+  }
+  #RIPPLES05 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_05.jpg);
+    background-size:cover;
+  }
+  #RIPPLES06 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_06.jpg);
+    background-size:cover;
+  }
+  #RIPPLES07 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_07.jpg);
+    background-size:cover;
+  }
+  #RIPPLES08 {
+    width:100%;
+    height:480px;
+    background-image: url(../images/summer/summer_08.jpg);
+    background-size:cover;
+  }
+
+
+/* LEAVES for AUTUMN */
+article.LEAVES {
+
+}
+  #LEAVES01 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_01.jpg');
+    background-size:cover;
+  }
+  #LEAVES02 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_02.jpg');
+    background-size:cover;
+  }
+  #LEAVES03 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_03.jpg');
+    background-size:cover;
+  }
+  #LEAVES04 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_04.jpg');
+    background-size:cover;
+  }
+  #LEAVES05 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_05.jpg');
+    background-size:cover;
+  }
+  #LEAVES06 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_06.jpg');
+    background-size:cover;
+  }
+  #LEAVES07 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_07.jpg');
+    background-size:cover;
+  }
+  #LEAVES08 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_08.jpg');
+    background-size:cover;
+  }
+  #LEAVES09 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_09.jpg');
+    background-size:cover;
+  }
+  #LEAVES10 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_10.jpg');
+    background-size:cover;
+  }
+  #LEAVES11 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_11.jpg');
+    background-size:cover;
+  }
+  #LEAVES12 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_12.jpg');
+    background-size:cover;
+  }
+  #LEAVES13 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_13.jpg');
+    background-size:cover;
+  }
+  #LEAVES14 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_14.jpg');
+    background-size:cover;
+  }
+  #LEAVES15 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_15.jpg');
+    background-size:cover;
+  }
+  #LEAVES16 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_16.jpg');
+    background-size:cover;
+  }
+  #LEAVES17 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_17.jpg');
+    background-size:cover;
+  }
+  #LEAVES18 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_18.jpg');
+    background-size:cover;
+  }
+  #LEAVES19 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_19.jpg');
+    background-size:cover;
+  }
+  #LEAVES20 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_20.jpg');
+    background-size:cover;
+  }
+  #LEAVES21 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_21.jpg');
+    background-size:cover;
+  }
+  #LEAVES22 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_22.jpg');
+    background-size:cover;
+  }
+  #LEAVES23 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_23.jpg');
+    background-size:cover;
+  }
+  #LEAVES24 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_24.jpg');
+    background-size:cover;
+  }
+  #LEAVES25 {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    background-image: url('../images/autumn/autumn_25.jpg');
+    background-size:cover;
+  }
+  #leafContainer {
+    /* Defines the position and dimensions of the leafContainer div
+    定义叶容器div的位置和尺寸*/
+    position: absolute;
+    width: 100%;
+    height: 480px;
+  }
+
+/* SNOW for WINTER */
+article.SNOW {
+    position:relative;
+}
+
+  #SNOW01 {
+    width: 100%;
+    height: 480px;
+    pointer-events: none;
+    background-image: url("../images/winter/winter_01.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat no-repeat;
+  }
+  #SNOW02 {
+    width: 100%;
+    height: 480px;
+    pointer-events: none;
+    background-image: url("../images/winter/winter_02.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat no-repeat;
+  }
+  #SNOW03 {
+    width: 100%;
+    height: 480px;
+    pointer-events: none;
+    background-image: url("../images/winter/winter_03.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat no-repeat;
+  }
+  #SNOW04 {
+    width: 100%;
+    height: 480px;
+    pointer-events: none;
+    background-image: url("../images/winter/winter_04.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat no-repeat;
+  }  #SNOW05 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_05.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW06 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_06.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW07 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_07.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW08 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_08.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW09 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_09.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW10 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_10.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+
+    #SNOW11 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_11.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW12 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_12.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW013 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_13.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW14 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_14.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW15 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_15.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW16{
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_16.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW17{
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_17.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW18 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_18.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW19 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_19.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW20 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_20.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW21 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_21.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW22 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_22.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW23 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_23.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW24 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_24.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW25 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_25.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW26{
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_26.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW27 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_27.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW28 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_28.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW29 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_29.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+    #SNOW30 {
+      width: 100%;
+      height: 480px;
+      pointer-events: none;
+      background-image: url("../images/winter/winter_30.jpg");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat no-repeat;
+    }
+
+
+
+  #SLIDER {
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  #SLIDER input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #d7dcdf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+
+/*** ASIDE ****/
+
+aside {
+  flex:1;
+  padding: 3rem;
+  text-align: center;
+  background:linear-gradient(to top,#fbfcdb,#d4d3dd);
+}
+
+  aside h1 {
+    background:-webkit-linear-gradient(0deg,#009999,#66CCCC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #FFFFDD;
+  }
+
+  aside p {
+    background:-webkit-linear-gradient(0deg, #66CCCC,#ACB6E5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #FFFFDD;
+  }
+
+/************* FOOTER **************/
+
+footer {
+  padding: 2rem 3rem;
+  text-align: center;
+  background:linear-gradient(to top,#333,#819FF7);
+  color: white;
+}
+
+footer p {
+  background:-webkit-linear-gradient(0deg, #98fb98, #86FDE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
